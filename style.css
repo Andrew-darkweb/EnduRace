@@ -214,11 +214,19 @@ header {
 
 @media screen and (max-width: 430px) {
     body {
+        max-width: 430px;
         display: flex;
         flex-wrap: wrap;
     }
     header {
         max-width: 430px;
+    }
+    .header__map {
+        border-radius: 8px;
+        margin-left: 15px;
+    }
+    .header__phone {
+        border-radius: 10px;
     }
     h1 {
        font-size: 22px !important;
@@ -276,5 +284,34 @@ header {
    .yandex {
     width: 350px;
     height: 500px;
+   }
+   .middle__container {
+       display: grid;
+       grid-template-columns: repeat(1, 350px);
+       grid-template-rows: repeat(2, 1000px);
+       justify-items: center;
+       margin-bottom: 50px;
+       gap: 0px;
+   }
+   .middle__img {
+       width: 350px;
+   }
+   .middle__card {
+    width: 350px;
+    margin-bottom: 0px;
+   }
+   .middle__card {
+    height: fit-content;
+   }
+   .middle__container_white {
+       display: grid;
+       grid-template-columns: repeat(1, 350px);
+       grid-template-rows: repeat(2, 700px);
+       justify-items: center;
+       grid-gap: 50px;
+       margin-bottom: 50px;
+       max-width: 430px;
+   }
+   }
    }
 }
